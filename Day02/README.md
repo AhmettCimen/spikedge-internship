@@ -58,6 +58,8 @@ Ayrıca açık kaynaklı veri seti seçenekleri de değerlendirilebilir:
 - **Labels4Rails:** Her mevsim için ayrı ayrı veri seti barındırması bir avantaj sunarken, her bir mevsim için yaklaşık 4 GB veri içermesi dezavantaj oluşturmaktadır.
 - **RailSem19:** Alternatif bir açık kaynaklı demiryolu segmentasyon veri seti olarak kullanılabilir.
 
-Kaynak:
-Labels4Rails: A Railway Image Annotation Tool and Associated Reference Dataset
-https://www.mdpi.com/2306-5729/10/12/210
+Kaynaklar:
+1. Labels4Rails: A Railway Image Annotation Tool and Associated Reference Dataset
+   https://www.mdpi.com/2306-5729/10/12/210
+2. RailSem19:
+   https://www.wilddash.cc/railsem19
