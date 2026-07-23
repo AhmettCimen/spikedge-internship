@@ -3,7 +3,7 @@
 ## Özet
 Bugün normalde, segmentasyon modeli tarafından üretilen tren rayı maskelerine **skeletonization** işlemi uygulayarak rayların merkez çizgisini çıkarmam, ardından bu çizgiyi matematiksel bir eğriye dönüştürerek eğrinin kareler arasındaki kararlılığını artırmak amacıyla **Kalman Filter** ve **Optical Flow** gibi yöntemleri uygulamam bekleniyordu.
 
-Ancak bu aşamaya geçebilmek için öncelikle videolardan güvenilir tren rayı maskeleri elde etmem gerekiyor. Bunun için önce kullanılacak segmentasyon modelinin belirlenmesi, ardından modelin etiketli veri gerektirip gerektirmediğinin değerlendirilmesi gerekiyor. Etiketli veri gerektiren modeller için ise elimizde bulunan video kayıtlarından uygun bir eğitim veri seti oluşturulması gerekiyor.
+Ancak bu aşamaya geçebilmek için öncelikle videolardan tren rayı maskeleri elde etmem gerekiyor. Bunun için önce kullanılacak segmentasyon modelinin belirlenmesi, ardından modelin etiketli veri gerektirip gerektirmediğinin değerlendirilmesi gerekiyor. Etiketli veri gerektiren modeller için ise elimizde bulunan video kayıtlarından uygun bir eğitim veri seti oluşturulması gerekiyor.
 
 Etiketlenecek görselleri elde etmek için video şeklinde verilen veriden **OpenCV** kullanarak belirli aralıklarda kareler kaydedip deneme olarak 200 kareden oluşan etiketsiz bir veri seti oluşturdum. Oluşturulan veri setinde tren rayı görüntüsü içermeyen (örneğin videonun giriş kısmındaki harita görüntüleri) veya video üzerine eklenmiş yazıların rayların üzerine geldiği kareleri, gerçek dışı senaryolar oluşturduğu için veri setinden çıkardım.
 
