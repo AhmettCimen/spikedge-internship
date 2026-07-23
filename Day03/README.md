@@ -1,5 +1,10 @@
-# Ahmet Çimen 07/22/2026 Çalışma Notları
+# Demiryolu Hat ve Ray Segmentasyonu (Day 03 Raporu)
 
+> **Ahmet Çimen - 07/22/2026 Çalışma Notları / Day 03 Dokümantasyonu**
+
+Bu proje, **RailSem19** açık kaynak veri seti kullanılarak geliştirilen YOLOv8-seg tabanlı demiryolu hattı (`rail-track`) ve metal ray çizgilerinin (`rail-line`) segmentasyonu, dikey kesit nokta çıkarımı ve sinyal işleme yöntemleri ile iyileştirilmesini içermektedir.
+
+---
 
 ## 1. Veri Seti Seçimi ve Hazırlığı
 
@@ -50,17 +55,17 @@ Polinomun başarısızlığı üzerine Sinyal İşleme (Digital Signal Processin
 
 ---
 
-## 5. Örnek Video Çıkarım Çıktıları (Model Ekran Görüntüleri)
+## 5. Örnek Video Çıkarım Sonuçları
 
 Aşağıdaki ekran görüntüleri, eğitilen modelin bir örnek video üzerinde denendiği ve model çıkarımlarının gösterildiği birkaç kareyi temsil etmektedir:
 
 | Kare 1 | Kare 2 |
 | :---: | :---: |
-| ![Ekran Görüntüsü 1](Day03/src/Screenshot_1.png) | ![Ekran Görüntüsü 2](Day03/src/Screenshot_2.png) |
+| ![Ekran Görüntüsü 1](src/Screenshot_1.png) | ![Ekran Görüntüsü 2](src/Screenshot_2.png) |
 
 | Kare 3 | Kare 4 |
 | :---: | :---: |
-| ![Ekran Görüntüsü 3](Day03/src/Screenshot_3.png) | ![Ekran Görüntüsü 4](Day03/src/Screenshot_4.png) |
+| ![Ekran Görüntüsü 3](src/Screenshot_3.png) | ![Ekran Görüntüsü 4](src/Screenshot_4.png) |
 
 ---
 
