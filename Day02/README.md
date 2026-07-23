@@ -1,11 +1,19 @@
 # Ahmet Çimen 07/21/2026 Çalışma Notları
 
 ## Özet
-Bugün normalde, segmentasyon modeli tarafından üretilen tren rayı maskelerine **skeletonization** işlemi uygulayarak rayların merkez çizgisini çıkarmam, ardından bu çizgiyi matematiksel bir eğriye dönüştürerek eğrinin kareler arasındaki kararlılığını artırmak amacıyla **Kalman Filter** ve **Optical Flow** gibi yöntemleri araştırmam bekleniyordu.
+Bugün normalde, segmentasyon modeli tarafından üretilen tren rayı maskelerine **skeletonization** işlemi uygulayarak rayların merkez çizgisini çıkarmam, ardından bu çizgiyi matematiksel bir eğriye dönüştürerek eğrinin kareler arasındaki kararlılığını artırmak amacıyla **Kalman Filter** ve **Optical Flow** gibi yöntemleri uygulamam bekleniyordu.
 
 Ancak bu aşamaya geçebilmek için öncelikle videolardan güvenilir tren rayı maskeleri elde etmem gerekiyor. Bunun için önce kullanılacak segmentasyon modelinin belirlenmesi, ardından modelin etiketli veri gerektirip gerektirmediğinin değerlendirilmesi gerekiyor. Etiketli veri gerektiren modeller için ise elimizde bulunan video kayıtlarından uygun bir eğitim veri seti oluşturulması gerekiyor.
 
 Etiketlenecek görselleri elde etmek için video şeklinde verilen veriden **OpenCV** kullanarak belirli aralıklarda kareler kaydedip deneme olarak 200 kareden oluşan etiketsiz bir veri seti oluşturdum. Oluşturulan veri setinde tren rayı görüntüsü içermeyen (örneğin videonun giriş kısmındaki harita görüntüleri) veya video üzerine eklenmiş yazıların rayların üzerine geldiği kareleri, gerçek dışı senaryolar oluşturduğu için veri setinden çıkardım.
+
+| Ham Kamera Görseli (`image`) | Siyah-Beyaz Segmentasyon Maskesi (`label`) |
+| :---: | :---: |
+| ![frame_000600 image](src/images/frame_000600.jpg) | ![frame_000600 label](src/labels/frame_000600.png) |
+| ![frame_010800 image](src/images/frame_010800.jpg) | ![frame_010800 label](src/labels/frame_010800.png) |
+| ![frame_012600 image](src/images/frame_012600.jpg) | ![frame_012600 label](src/labels/frame_012600.png) |
+
+Otomatik etiketleme; Bird's Eye View (BEV) transform, Canny Edge Detection ve Sliding Window gibi klasik bilgisayar görüşü teknikleri ile gerçekleştirilmiş, ancak karmaşık sahnelerde etiketli verileri hazırlamada **yetersiz kalmıştır**.
 
 Bu kapsamda, elimizde bulunan etiketsiz video verisini nasıl etiketleyebileceğime yönelik yöntemleri araştırdım. İncelediğim yaklaşımlar genel olarak **manuel etiketleme** ve **otomatik etiketleme** olmak üzere iki gruba ayrılmaktadır.
 
@@ -44,7 +52,7 @@ Otomatik annotation yöntemleri manuel işlemleri azaltarak veri oluşturma sür
 
 Benzer şekilde YOLO tabanlı otomatik nesne tespit yöntemleri de daha önce bu tür nesneler ile eğitilmediği durumda tren rayı makasları veya özel ray geometrilerini algılamakta zorlanabilmektedir.
 
-Bu araştırmalar sonucunda, tren rayı segmentasyonu için tamamen otomatik annotation yöntemlerinin mevcut haliyle yeterli doğruluğu sağlamayabileceği, ancak manuel etiketleme ile otomatik yöntemlerin birlikte kullanıldığı hibrit yaklaşımların daha uygulanabilir olduğu değerlendirilmiştir.
+Bu araştırmalar sonucunda, tren rayı segmentasyonu için tamamen otomatik annotation yöntemlerinin mevcut haliyle yeterli doğruluğu sağlamayabileceği, ancak manuel etiketleme ile otomatik yöntemlerin birlikte kullanıldığı hibrit yaklaşımların daha uygulanabilir olduğu değerlendirilmiştir. Ayrıca, açık kaynaklı paylaşılan veri setlerinin kullanımı da değerlendirilebilir.
 
 Kaynak:
 Labels4Rails: A Railway Image Annotation Tool and Associated Reference Dataset
