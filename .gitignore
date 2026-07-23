@@ -1,0 +1,60 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE & Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Python / Type checker caches
+.mypy_cache/
+.pytest_cache/
+
+# YOLO / Ultralytics Training Runs & Model Weights
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+*.weights
+
+# Ignore training outputs inside runs, but allow directory traversal and best.pt
+Day03/runs/**
+!Day03/runs/**/
+!**/best.pt
+
+# Datasets & Large Archives
+datasets/
+dataset/
+data/
+railsem19/
+*.zip
+*.tar
+*.gz
+
+# Video files (Inputs & Outputs)
+*.mp4
+*.avi
+*.mov
+*.mkv
