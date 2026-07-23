@@ -52,7 +52,11 @@ Otomatik annotation yöntemleri manuel işlemleri azaltarak veri oluşturma sür
 
 Benzer şekilde YOLO tabanlı otomatik nesne tespit yöntemleri de daha önce bu tür nesneler ile eğitilmediği durumda tren rayı makasları veya özel ray geometrilerini algılamakta zorlanabilmektedir.
 
-Bu araştırmalar sonucunda, tren rayı segmentasyonu için tamamen otomatik annotation yöntemlerinin mevcut haliyle yeterli doğruluğu sağlamayabileceği, ancak manuel etiketleme ile otomatik yöntemlerin birlikte kullanıldığı hibrit yaklaşımların daha uygulanabilir olduğu değerlendirilmiştir. Ayrıca, açık kaynaklı paylaşılan veri setlerinin kullanımı da değerlendirilebilir.
+Bu araştırmalar sonucunda, tren rayı segmentasyonu için tamamen otomatik annotation yöntemlerinin mevcut haliyle yeterli doğruluğu sağlamayabileceği, ancak manuel etiketleme ile otomatik yöntemlerin birlikte kullanıldığı hibrit yaklaşımların daha uygulanabilir olduğu değerlendirilmiştir.
+
+Ayrıca açık kaynaklı veri seti seçenekleri de değerlendirilebilir:
+- **Labels4Rails:** Her mevsim için ayrı ayrı veri seti barındırması bir avantaj sunarken, her bir mevsim için yaklaşık 4 GB veri içermesi dezavantaj oluşturmaktadır.
+- **RailSem19:** Alternatif bir açık kaynaklı demiryolu segmentasyon veri seti olarak kullanılabilir.
 
 Kaynak:
 Labels4Rails: A Railway Image Annotation Tool and Associated Reference Dataset
