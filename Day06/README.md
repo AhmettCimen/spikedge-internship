@@ -52,18 +52,18 @@ Geliştirilen altyapı ile yapılan testlerde `best_yolov8n_seg` modelinin DeepL
   <tbody>
     <tr>
       <td align="center"><b>Frame 300</b><br>(10.0s)</td>
-      <td><img src="../../../Outputs/Cmp/Deeplab+Resnet/Screenshots(10)/frame_000300_sec_10.0s.jpg" width="450" style="width:100%; display:block;" alt="DeepLab 10s" /></td>
-      <td><img src="../Outputs/screenshots/best_yolov8n_seg_4/frame_000300_sec_10.0s.jpg" width="450" style="width:100%; display:block;" alt="YOLOv8n 10s" /></td>
+      <td><img src="src/deeplab_frame_000300_sec_10.0s.jpg" width="450" style="width:100%; display:block;" alt="DeepLab 10s" /></td>
+      <td><img src="src/yolov8n_frame_000300_sec_10.0s.jpg" width="450" style="width:100%; display:block;" alt="YOLOv8n 10s" /></td>
     </tr>
     <tr>
       <td align="center"><b>Frame 450</b><br>(15.0s)</td>
-      <td><img src="../../../Outputs/Cmp/Deeplab+Resnet/Screenshots(10)/frame_000450_sec_15.0s.jpg" width="450" style="width:100%; display:block;" alt="DeepLab 15s" /></td>
-      <td><img src="../Outputs/screenshots/best_yolov8n_seg_4/frame_000450_sec_15.0s.jpg" width="450" style="width:100%; display:block;" alt="YOLOv8n 15s" /></td>
+      <td><img src="src/deeplab_frame_000450_sec_15.0s.jpg" width="450" style="width:100%; display:block;" alt="DeepLab 15s" /></td>
+      <td><img src="src/yolov8n_frame_000450_sec_15.0s.jpg" width="450" style="width:100%; display:block;" alt="YOLOv8n 15s" /></td>
     </tr>
     <tr>
       <td align="center"><b>Frame 1200</b><br>(40.0s)</td>
-      <td><img src="../../../Outputs/Cmp/Deeplab+Resnet/Screenshots(10)/frame_001200_sec_40.0s.jpg" width="450" style="width:100%; display:block;" alt="DeepLab 40s" /></td>
-      <td><img src="../Outputs/screenshots/best_yolov8n_seg_4/frame_001200_sec_40.0s.jpg" width="450" style="width:100%; display:block;" alt="YOLOv8n 40s" /></td>
+      <td><img src="src/deeplab_frame_001200_sec_40.0s.jpg" width="450" style="width:100%; display:block;" alt="DeepLab 40s" /></td>
+      <td><img src="src/yolov8n_frame_001200_sec_40.0s.jpg" width="450" style="width:100%; display:block;" alt="YOLOv8n 40s" /></td>
     </tr>
   </tbody>
 </table>
