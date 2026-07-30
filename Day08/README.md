@@ -11,7 +11,7 @@ Ekip arkadaşımın ihtiyaç duyduğu görsel verileri elde edebilmek amacıyla 
 - **Saha Testi ve Teslimat:** Hazırlanan araç test videosu üzerinde çalıştırılmış, saniyelik kareler çıkartılarak veri etiketleme ve inceleme yapacak ekip arkadaşıma iletilmiştir.
 
 ### Frame Extractor Grafik Arayüzü:
-<p align="center">
+<p >
   <img src="src/ScreenshotExtractor.png" alt="1080p Video Frame Extractor GUI" width="50%">
 </p>
 
