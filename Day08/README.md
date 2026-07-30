@@ -1,4 +1,4 @@
-# Günlük Çalışma Raporu — Gün 8 (Çarşamba)
+# Ahmet Çimen 07/29/2026 Çalışma Notları
 
 ## 1. 1080p Video Ekran Görüntüsü ve Kare Çıkarma Aracı (Frame Extractor)
 Ekip arkadaşımın ihtiyaç duyduğu görsel verileri elde edebilmek amacıyla Python ve Tkinter tabanlı modüler bir **1080p Frame Extractor (Görüntü Çıkarıcı)** aracı geliştirdim.

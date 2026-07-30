@@ -1,4 +1,4 @@
-# Günlük Çalışma Raporu — Gün 6 (Pazartesi)
+# Ahmet Çimen 07/27/2026 Çalışma Notları
 
 ## 1. YOLOv8 Nano Segmentasyon Mimarisine Geçiş
 Bugün, önceki çalışmalarda kullanılan yüksek parametreli DeepLabV3+ mimarisine alternatif olarak, gömülü sistemler ve gerçek zamanlı uygulamalar için son derece hafif ve yüksek hızlı olan **YOLOv8 Nano Segmentasyon** modelini sisteme entegre ettim.

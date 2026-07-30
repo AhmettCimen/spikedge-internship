@@ -1,4 +1,4 @@
-# Günlük Çalışma Raporu — Gün 7 (Salı)
+# Ahmet Çimen 07/28/2026 Çalışma Notları
 
 ## 1. Google Colab 50 Epoch Çoklu Sınıf Eğitim Altyapısı
 Bugün, YOLOv8 Nano segmentasyon modelini daha kapsamlı bir çevre algılama yeteneğine kavuşturmak amacıyla RailSem19 veri setindeki tüm hedef sınıfları kapsayan çoklu sınıf eğitim sürecini başlattım.
