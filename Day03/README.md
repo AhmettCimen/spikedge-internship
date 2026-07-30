@@ -1,8 +1,4 @@
-# Demiryolu Hat ve Ray Segmentasyonu (Day 03 Raporu)
-
-> **Ahmet Çimen - 07/22/2026 Çalışma Notları / Day 03 Dokümantasyonu**
-
-Bu proje, **RailSem19** açık kaynak veri seti kullanılarak geliştirilen YOLOv8-seg tabanlı demiryolu hattı (`rail-track`) ve metal ray çizgilerinin (`rail-line`) segmentasyonu, dikey kesit nokta çıkarımı ve sinyal işleme yöntemleri ile iyileştirilmesini içermektedir.
+# Ahmet Çimen 07/22/2026 Çalışma Notları
 
 ---
 
