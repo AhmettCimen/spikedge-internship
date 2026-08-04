@@ -32,14 +32,11 @@ Eğitim sürecinde piksel bazlı kararlılığı artırmak ve sınıf dengesizli
 
 ---
 
-## 3. Bölgesel IoU ve Perspektif Derinlik Metrikleri
+## 3. Bölgesel IoU ve Perspektif Değerlendirmeleri
 
-Kamera açısı nedeniyle uzak mesafedeki piksel alanlarının azlığı standart IoU metriğinin yanıltıcı olmasına yol açabilmektedir. Bu durumu çözmek adına derinlik perspektifine özel bölgesel metrik hesaplama mantığı kurguladım:
+Kamera açısı nedeniyle rayın ilerisindeki (uzak mesafedeki) kısımlar görüntüde çok daha az piksel kaplamaktadır. Bu durum, standart IoU metriği hesaplanırken uzak bölgelerdeki tespit hassasiyetinin genel IoU skoruna etkisinin oldukça düşük kalmasına neden olmaktadır.
 
-- **$\text{IoU}_{\text{yakın}}$:** Görüntünün alt %35'lik alanı (Trenin anlık frenleme ve acil durum bölgesindeki IoU başarımı).
-- **$\text{IoU}_{\text{orta}}$:** Görüntünün orta %30'luk alanı (Orta mesafe hat takibi IoU başarımı).
-- **$\text{IoU}_{\text{uzak}}$:** Görüntünün üst %35'lik alanı (Uzak görüş ufkundaki hat tespiti IoU başarımı).
-- **Boundary F1 Score:** Ray sınır hatlarının piksel toleransı içerisindeki sınır keskinliği doğruluğu.
+Bu etkiyi dengelemek adına, uzak mesafedeki bölgelerin ağırlıklandırılması veya bölgesel IoU yaklaşımlarının kullanılması potansiyel bir iyileştirme olarak değerlendirilebilir.
 
 ---
 
