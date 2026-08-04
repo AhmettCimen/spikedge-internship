@@ -17,14 +17,12 @@ Bugün, trenin hareket doğrultusunda üzerinde ilerleyeceği ray koridorunu has
 
 ## 2. Derin Öğrenme Model Mimarileri ve Kayıp Fonksiyonu
 
-Farklı derin öğrenme mimarilerini ve backbone encoder kombinasyonlarını eğitmek ve karşılaştırmak üzere modüler bir altyapı oluşturdum.
+Bu çalışmada segmentasyon için **DeepLabV3+ (ResNet-50)** ve daha hafif bir alternatif olarak **DeepLabV3+ (MobileNetV2)** mimarileri denenmiştir. Denemelerde MobileNet tabanlı model yetersiz temsil kapasitesi ve başarısız segmentasyon sonuçları verdiği için değerlendirmeye tabi tutulmamış, performans ölçümleri ve testlerde ana model olarak **DeepLabV3+ (ResNet-50)** kullanılmıştır.
 
-| Model Mimarisi | Backbone Encoder | Parametre Sayısı | Hedef Kullanım Senaryosu |
-| :--- | :--- | :--- | :--- |
-| **DeepLabV3+** | ResNet-50 | ~26M | Yüksek doğruluklu ana segmentasyon modeli |
-| **U-Net** | EfficientNet-B3 | ~12M | Dengeli parametre ve ölçeklendirilebilir başarım |
-| **FPN** | ResNet-50 | ~25M | Çoklu ölçekli (pyramid) özellik çıkarımı |
-| **U-Net** | MobileNetV2 | ~3M | Hafif mobil ve gömülü cihazlar |
+| Model Mimarisi | Backbone Encoder | Parametre Sayısı | Hedef Kullanım Senaryosu | Durum / Değerlendirme |
+| :--- | :--- | :--- | :--- | :--- |
+| **DeepLabV3+** | ResNet-50 | ~26M | Yüksek doğruluklu ana segmentasyon modeli | **Başarılı** (Değerlendirmeye ve benchmark'a tabi tutuldu) |
+| **DeepLabV3+** | MobileNetV2 | ~3.5M | Hafif mobil ve gömülü cihaz alternatifi | **Başarısız** (Yetersiz segmentasyon nedeniyle değerlendirmeye tabi tutulmadı) |
 
 Eğitim sürecinde piksel bazlı kararlılığı artırmak ve sınıf dengesizliği sorununu aşmak için Dice Loss, Binary Cross Entropy (BCE) Loss ve Boundary Loss kombinasyonundan oluşan **Hibrit Kayıp Fonksiyonu** uyguladım:
 
@@ -61,7 +59,7 @@ Modelin lokal bilgisayarda canlı video akışlarında yüksek FPS ve düşük g
 
 ## 5. Örnek Benchmark ve Çıkarım Sonuçları
 
-Geliştirilen GPU çıkarım pipeline'ı ile NVIDIA GeForce RTX 3050 GPU ortamında elde edilen canlı test ve benchmark sonuçları aşağıda özetlenmiştir:
+Geliştirilen GPU çıkarım pipeline'ı ile NVIDIA GeForce RTX 3050 GPU ortamında elde edilen canlı test ve benchmark sonuçları aşağıda özetlenmiştir *(DeepLabV3+ MobileNetV2 modeli segmentasyonda başarısız olduğu için değerlendirmeye tabi tutulmamış, benchmark yalnızca **DeepLabV3+ ResNet-50** modeli üzerinde yapılmıştır)*:
 
 | Metrik / Parametre | Değer |
 | :--- | :--- |
