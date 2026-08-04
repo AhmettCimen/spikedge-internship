@@ -41,7 +41,6 @@ Yapılan testlerde hem PyTorch çıkarım altyapısı hem de hazırlanan benchma
 | Model Adı | GPU Çıkarım FPS | GPU Gecikme (ms) | Sistem Akış FPS | Sistem Gecikmesi (ms) | Test Tarihi |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **`best_yolov8n_seg`)** | **36.59 ± 2.1** | **27.69 ms** | **30.99** | **32.67 ms** | 2026-07-29 |
-| **`yolov8n_multiclass_25`** | 33.79 ± 3.1 | 30.29 ms | 21.77 | 46.65 ms | 2026-07-28 |
 | **`yolov8n_multiclass_35`** | 31.20 ± 2.43 | 32.46 ms | 20.59 | 48.99 ms | 2026-07-28 |
 | **`deeplabv3plus+resnet50`** | 23.98 ± 1.2 | 41.82 ms | 17.37 | 57.79 ms | 2026-07-28 |
 
