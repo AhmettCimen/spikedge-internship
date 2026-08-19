@@ -27,4 +27,4 @@ Aşağıda denenen yöntemlerin ürettiği sonuçlar ile referans YOLO modelinin
 
 ## Gün Sonu Değerlendirmesi
 
-Yaptığım incelemeler sonucunda, hem Band Tracking hem de RANSAC algoritmalarının ray tespiti konusunda son derece başarısız olduğunu üzülerek gözlemledim. Her iki yöntem de çevresel faktörlere (örneğin gölgeler, ray dışındaki düz ve çizgisel nesneler, aydınlatma farklılıkları) karşı aşırı duyarlı davranarak rayları takip edememiş veya tamamen alakasız çizgiler üretmiştir. Bu testlerle birlikte, matematiksel/klasik görüntü işleme algoritmalarının sahadaki zorlu koşullar için yeterli stabiliteyi sunamadığı, dolayısıyla derin öğrenme tabanlı (YOLO gibi) yaklaşımların vazgeçilmez olduğu bir kez daha kanıtlanmıştır.
+Yaptığım incelemeler sonucunda, hem Band Tracking hem de RANSAC algoritmalarının ray tespiti konusunda son derece başarısız olduğunu üzülerek gözlemledim. Her iki yöntem de çevresel faktörlere (örneğin gölgeler, ray dışındaki düz ve çizgisel nesneler, aydınlatma farklılıkları) karşı aşırı duyarlı davranarak rayları takip edememiş veya tamamen başarısız çizgi hatları üretmiştir.
