@@ -25,7 +25,7 @@ Aşağıda, kontrol panelinde belirlenen filtre parametrelerinin uygulanması so
 
 | Filtreleme Çıktısı | Kontrol Paneli Parametreleri |
 | :---: | :---: |
-| <img src="src/ss1.png" width="380" alt="Filtreleme Çıktısı" /> | <img src="src/ss2.png" width="220" alt="Kontrol Paneli" /> |
+| <img src="src/ss1.png" width="500" alt="Filtreleme Çıktısı" /> | <img src="src/ss2.png" width="230" alt="Kontrol Paneli" /> |
 
 ## Gün Sonu Değerlendirmesi
 
